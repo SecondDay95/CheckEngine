@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.checkengine2.settings.CurrentSettings">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Wybierz tryb skalowania osi:"
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb_auto_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Automatyczne skalowanie osi"
+                    android:textSize="18sp"
+                    android:onClick="onRadioButtonClickedCurrent"/>
+
+                <RadioButton
+                    android:id="@+id/rb_manual_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Manualne skalowanie osi"
+                    android:textSize="18sp"
+                    android:onClick="onRadioButtonClickedCurrent"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_maxY_current"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:hint="Podaj wartość maksymalną osi y"/>
+
+            <EditText
+                android:id="@+id/et_minY_current"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Podaj wartość minimalną osi y"/>
+
+            <EditText
+                android:id="@+id/et_stepY_current"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Podaj podstawę zmian na osi y"/>
+
+            <EditText
+                android:id="@+id/et_stepX_current"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Podaj podstawę zmian na osi x"/>
+
+            <Button
+                android:id="@+id/btn_save_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:padding="2dp"
+                android:text="Zapisz"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CheckEngine</string>
+    <string-array name="titles">
+        <item>Rzeczywisty przebieg dniowy</item>
+        <item>Trend miesięczny</item>
+        <item>Porównanie trendów 3 ostatnich miesięcy</item>
+        <item>Trend roczny</item>
+        <item>Trend całościowy</item>
+        <item>Włącz powiadomienia</item>
+        <item>Ustawienia</item>
+    </string-array>
+    <string name="open">Open drawer</string>
+    <string name="close">Close drawer</string>
+</resources>

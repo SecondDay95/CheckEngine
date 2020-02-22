@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/it_dayPlot"
+        android:title="Dniowy przebieg"/>
+
+    <item android:id="@+id/it_monthPlot"
+        android:title="Miesięczny przebieg"/>
+
+    <item android:id="@+id/it_threeMonthPlot"
+        android:title="Przebieg z ostatnich 3 miesięcy"/>
+
+    <item android:id="@+id/it_yearPlot"
+        android:title="Roczny przebieg"/>
+
+    <item android:id="@+id/it_allPlot"
+        android:title="Całościowy przebieg"/>
+
+    <item android:id="@+id/it_notification"
+        android:title="Włącz powiadomienia"/>
+
+    <item android:id="@+id/it_settings"
+        android:title="Ustawienia"/>
+</menu>
